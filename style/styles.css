@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: rgb(52, 52, 52);
+  color: white;
+}
+
+a:hover {
+  color: rgb(159, 159, 159);
+}
+
+.right{
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 18px;
+  position: absolute;
+  top: 20px;
+  right: 90px;
+}
+
+
+.main {
+  font-family: Montserrat;
+  font-weight: 600 ;
+  font-size: 100px;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/*body {
+  background-image: url("images/galaxy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(52, 52, 52);
+  margin: 0;
+}*/
+
+#curseur-cercle {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 2px solid white;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 1000;
+  transition: transform 0.3s ease, left 0.1s ease, top 0.1s ease;
+}
+
+#curseur-cercle.agrandi {
+  border-color: rgb(159, 159, 159);
+}
+
+i:hover {
+  color: rgb(159, 159, 159);
+}
+
+.fa-instagram {
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+}
+
+.fa-linkedin {
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 55px;
+  text-decoration: none;
+}
